@@ -117,3 +117,41 @@ section #text span{
     font-size: 1em;
     color: #fff;
 }
+
+
+.bottomSection1{
+    color: blue;
+    background: brown;
+}
+.bottomSection2{
+    color: brown;
+    background: blue;
+}
+.bottomSection3{
+    color: blue;
+    background: brown;
+}
+section .text2{
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+}
+section .cards{
+    display: flex;
+}
+section .cards .text-card{
+    background: cyan;
+    margin: 20px;
+    padding: 20px;
+}
+section .cards .text-card h3{
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+@media (max-width: 900px){
+    section .cards{
+        flex-direction: column;
+    }
+}
