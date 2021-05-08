@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
         <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="aos.css">
     </head>
     <body>
 
@@ -20,7 +24,7 @@
 
         <!--Background Photos-->
 
-        <section>
+        <section id="imgSec">
             <h2 id="text"><span>it's time for</span><br>Relaxing</h2>
             <img src="cloudLeft.png" id="cloudLeft">
             <img src="cloudRight.png" id="cloudRight">
@@ -29,22 +33,11 @@
             <img src="mountian1.png" id="mountian1">
             <img src="bottom2.png" id="bottom">
         </section>
-  
-        <div class="sec">
-            <h2>Test Paragraph</h2>
-            <p>English is a West Germanic language that originated from Anglo-Frisian dialects brought to Britain in the mid 5th 
-            to 7th centuries AD by Anglo-Saxon migrants from what is now northwest Germany, southern Denmark and the Netherlands.
-            The Anglo-Saxons settled in the British Isles from the mid-5th century and came to dominate the bulk of southern Great Britain.
-             Their language, now called Old English, originated as a group of Anglo-Frisian dialects which were spoken, at least by the settlers,
-            in England and southern and eastern Scotland in the early Middle Ages, displacing the Celtic languages (and, possibly, British Latin)
-            that had previously been dominant. Old English reflected the varied origins of the Anglo-Saxon kingdoms established in different parts of Britain.
-            The Late West Saxon dialect eventually became dominant. A significant subsequent influence on the shaping of Old English came from contact with
-             the North Germanic languages spoken by the Scandinavian Vikings who conquered and colonized parts of Britain during the 8th and 9th centuries,
-             which led to much lexical borrowing and grammatical simplification. The Anglian dialects had a greater influence on Middle English.</p>
-        </div>
         
+        <!-- seasons -->
+
         <section class="bottomSection1">
-            <div class="container">
+            <div class="container reveal">
                 <h2 class="text2">Your Title</h2>
                 <div class="cards">
                     <div class="text-card">
@@ -63,7 +56,7 @@
             </div>
         </section>
         <section class="bottomSection2">
-            <div class="container">
+            <div class="container reveal">
                 <h2 class="text2">Your Title</h2>
                 <div class="cards">
                     <div class="text-card">
@@ -82,7 +75,26 @@
             </div>
         </section>
         <section class="bottomSection3">
-            <div class="container">
+            <div class="container reveal">
+                <h2 class="text2">Your Title</h2>
+                <div class="cards">
+                    <div class="text-card">
+                        <h3>Title</h3>
+                        <p>paragraph here paragraph here paragraph here paragraph here paragraph here paragraph here</p>
+                    </div>
+                    <div class="text-card">
+                        <h3>Title</h3>
+                        <p>paragraph here paragraph here paragraph here paragraph here paragraph here paragraph here</p>
+                    </div>
+                    <div class="text-card">
+                        <h3>Title</h3>
+                        <p>paragraph here paragraph here paragraph here paragraph here paragraph here paragraph here</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bottomSection4">
+            <div class="container reveal">
                 <h2 class="text2">Your Title</h2>
                 <div class="cards">
                     <div class="text-card">
@@ -103,7 +115,7 @@
 
         <!--Scroll Animated with JavaScript-->
 
-        <script>
+        <script type="text/javascript">
             let text = document.getElementById('text');
             let birdLeft = document.getElementById('birdLeft');
             let birdRight = document.getElementById('birdRight');
@@ -125,6 +137,25 @@
                 cloudRight.style.left = value * -1.5 + 'px';
                 bottom2.style.top = value * -1 + 'px';
             })
+            // window.addEventListener('scroll', reveal);
+
+            // function reveal(){
+            //     var reveals = document.querySelectorAll('.reveal');
+
+            //     for(var i = 0; i < reveals.length; i++){
+                    
+            //         var windowheight = window.innerHeight;
+            //         var revealtop = reveals[i].getBoundingClientRect().top;
+            //         var revealpoint = 150;
+
+            //         if(revealtop < windowheight - revealpoint){
+            //             reveals[i].classList.add('avtive');
+            //         }
+            //         else{
+            //             reveals[i].classList.remove('active');
+            //         }
+            //     }
+            // }
         </script>
     </body>
 </html>

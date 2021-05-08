@@ -55,25 +55,26 @@ body{
 
 /* its time for relaxing */
 
-section{
+section {
     position: relative;
     width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 /* images */
 
-section::before{
+#imgSec::before{
     content: '';
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
     height: 20%;
-    background: linear-gradient(to top, #094b65, transparent);
+    background: linear-gradient(to top, #0171A7, transparent);
     z-index: 10;
 }
 
@@ -103,33 +104,44 @@ section #text span{
 
 /* Article */
 
-.sec{
-    position: relative;
-    padding: 100px;
-    background: #094b65;
-}
-.sec h2{
-    font-size: 3.5em;
-    color: #fff;
-    margin-bottom: 10px;
-}
-.sec p{
-    font-size: 1em;
-    color: #fff;
-}
-
-
 .bottomSection1{
-    color: blue;
-    background: brown;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background-image: url("spring1.jpg");
+    background-size: contain;  
 }
 .bottomSection2{
-    color: brown;
-    background: blue;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background-image: url("summer1.jpg");
+    background-size: contain;
 }
 .bottomSection3{
-    color: blue;
-    background: brown;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background-image: url("fall1.jpg");
+    background-size: contain;
+}
+.bottomSection4{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background-image: url("winter1.jpg");
+    background-size: contain;
+}
+section .container{
+    margin: 100px;
 }
 section .text2{
     font-size: 40px;
@@ -140,7 +152,7 @@ section .cards{
     display: flex;
 }
 section .cards .text-card{
-    background: cyan;
+    background: brown;
     margin: 20px;
     padding: 20px;
 }
@@ -150,8 +162,17 @@ section .cards .text-card h3{
     text-transform: uppercase;
     margin-bottom: 10px;
 }
-@media (max-width: 900px){
+/* @media (max-width: 900px){
     section .cards{
         flex-direction: column;
     }
 }
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+.reveal.active{
+    transform: translateY(0px);
+} */
