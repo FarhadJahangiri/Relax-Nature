@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
         <link rel="stylesheet" type="text/css" href="style.css">
-        <link rel="stylesheet" type="text/css" href="aos.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
 
@@ -15,10 +15,10 @@
         <header id="header">
             <a href="#" class="logo">Relax With Nature</a>
             <ul>
-                <li><a href="#" class="active">one</a></li>
-                <li><a href="#">two</a></li>
-                <li><a href="#">three</a></li>
-                <li><a href="#">four</a></li>
+                <li><a href="#" class="active">SPRING</a></li>
+                <li><a href="#">SUMMER</a></li>
+                <li><a href="#">FALL</a></li>
+                <li><a href="#">WINTER</a></li>
             </ul>
         </header>
 
@@ -38,7 +38,7 @@
 
         <section class="bottomSection1">
             <div class="container reveal">
-                <h2 class="text2">Your Title</h2>
+                <h2 class="text2">spring</h2>
                 <div class="cards">
                     <div class="text-card">
                         <h3>Title</h3>
@@ -57,7 +57,7 @@
         </section>
         <section class="bottomSection2">
             <div class="container reveal">
-                <h2 class="text2">Your Title</h2>
+                <h2 class="text2">summer</h2>
                 <div class="cards">
                     <div class="text-card">
                         <h3>Title</h3>
@@ -76,7 +76,7 @@
         </section>
         <section class="bottomSection3">
             <div class="container reveal">
-                <h2 class="text2">Your Title</h2>
+                <h2 class="text2">fall</h2>
                 <div class="cards">
                     <div class="text-card">
                         <h3>Title</h3>
@@ -95,7 +95,7 @@
         </section>
         <section class="bottomSection4">
             <div class="container reveal">
-                <h2 class="text2">Your Title</h2>
+                <h2 class="text2">winter</h2>
                 <div class="cards">
                     <div class="text-card">
                         <h3>Title</h3>
@@ -112,50 +112,23 @@
                 </div>
             </div>
         </section>
+        <footer>
+            <div class="footer-content">
+                <h3>Relax With Nature</h3>
+                <p>this is a test paragraph this is a test paragraph</p>
+                <ul class="socials">
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa fa-github"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>copyright &copy;2021 RelaxWithNature. designed by <span>farhad jahangiri</span></p>
+            </div>
+        </footer>
 
-        <!--Scroll Animated with JavaScript-->
-
-        <script type="text/javascript">
-            let text = document.getElementById('text');
-            let birdLeft = document.getElementById('birdLeft');
-            let birdRight = document.getElementById('birdRight');
-            let cloudLeft = document.getElementById('cloudLeft');
-            let cloudRight = document.getElementById('cloudRight');
-            let mountian1 = document.getElementById('mountian1');
-            let bottom2 = document.getElementById('bottom2');
-
-            window.addEventListener('scroll',function(){
-                let value = window.scrollY;
-
-                text.style.top = 50 + value * -0.5 + '%';
-                birdLeft.style.top = value * -1.5 + 'px';
-                birdLeft.style.left = value * -5 + 'px';
-                birdRight.style.top = value * -1.5 + 'px';
-                birdRight.style.left = value * 2 + 'px';
-                mountian1.style.top = value * -0.12 + 'px';
-                cloudLeft.style.left = value * +1.5 + 'px';
-                cloudRight.style.left = value * -1.5 + 'px';
-                bottom2.style.top = value * -1 + 'px';
-            })
-            // window.addEventListener('scroll', reveal);
-
-            // function reveal(){
-            //     var reveals = document.querySelectorAll('.reveal');
-
-            //     for(var i = 0; i < reveals.length; i++){
-                    
-            //         var windowheight = window.innerHeight;
-            //         var revealtop = reveals[i].getBoundingClientRect().top;
-            //         var revealpoint = 150;
-
-            //         if(revealtop < windowheight - revealpoint){
-            //             reveals[i].classList.add('avtive');
-            //         }
-            //         else{
-            //             reveals[i].classList.remove('active');
-            //         }
-            //     }
-            // }
-        </script>
+        <script src="script.js"></script>
     </body>
 </html>
