@@ -1,3 +1,11 @@
+// sticky header //
+
+window.addEventListener("scroll", function(){
+    var header = document.querySelector("header");
+    header.classList.toggle("sticky", window.scrollY > 0);
+})
+
+//top animated photos// 
 let text = document.getElementById('text');
 let birdLeft = document.getElementById('birdLeft');
 let birdRight = document.getElementById('birdRight');
