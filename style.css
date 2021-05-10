@@ -357,10 +357,31 @@ footer{
     header .logo {
         font-size: 1.8em;
     }
+
+    /* Body For Mobile */
+
     section{
-        height: 30vh;
+        height: 70vh;
+        display: flex;
     }
     .imgSec{
         margin-top: 100px;
+    }
+    #cloudLeft,#cloudRight{
+        display: none;
+    }
+    section #text{
+        font-size: 20vw;
+    }
+    section .container{
+        display: flex;
+        flex-direction: column;
+    }
+    section .cards{
+        display: flex;
+        flex-direction: column;
+        height: 80vh;
+        width: 40vh;
+        padding-right: 58vh;
     }
 }
