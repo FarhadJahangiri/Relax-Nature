@@ -121,7 +121,7 @@ section #text span{
     align-items: center;
     color: black;
     background-image: url("spring1.jpg");
-    background-size: contain;  
+    background-size: cover;  
 }
 .bottomSection2{
     min-height: 100vh;
@@ -130,7 +130,7 @@ section #text span{
     align-items: center;
     color: black;
     background-image: url("summer1.jpg");
-    background-size: contain;
+    background-size: cover;
 }
 .bottomSection3{
     min-height: 100vh;
@@ -139,7 +139,7 @@ section #text span{
     align-items: center;
     color: black;
     background-image: url("fall1.jpg");
-    background-size: contain;
+    background-size: cover;
 }
 .bottomSection4{
     min-height: 100vh;
@@ -148,7 +148,7 @@ section #text span{
     align-items: center;
     color: black;
     background-image: url("winter1.jpg");
-    background-size: contain;
+    background-size: cover;
 }
 section .container{
     margin: 100px;
@@ -157,20 +157,74 @@ section .text2{
     font-size: 60px;
     text-align: center;
     text-transform: uppercase;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
 }
 section .cards{
     display: flex;
 }
 section .cards .text-card{
-    background: brown;
+    background-size: cover;
+    border: 0.1rem solid white;
     margin: 20px;
     padding: 20px;
+    width: 400px;
+    height: 300px;
 }
 section .cards .text-card h3{
     font-size: 30px;
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 10px;
+    background:rgba(255, 255, 255, 0.63);
+}
+#Garden{
+    background:url("Garden.jpeg");
+    background-size: cover;
+}
+#Picnic{
+    background: url("picnic.jpg");
+    background-size: cover;
+}
+#Lake{
+    background: url("Lake.jpg");
+    background-size: cover;
+}
+#beach{
+    background: url("beach.jpg");
+    background-size: cover;   
+}
+#desert{
+    background: url("desert.jpg");
+    background-size: cover;
+}
+#mountains{
+    background: url("mountains.jpg");
+    background-size: cover;
+}
+#jungle{
+    background: url("jungle.jpg");
+    background-size: cover;
+}
+#road{
+    background: url("road.jpg");
+    background-size: cover;
+}
+#lake1{
+    background: url("lake1.jpg");
+    background-size: cover;
+}
+#mountains1{
+    background: url("mountains1.jpg");
+    background-size: cover;
+}
+#fireplace{
+    background: url("fireplace.jpg");
+    background-size: cover;
+}
+#storm{
+    background: url("storm.jpg");
+    background-size: cover;
 }
 /* @media (max-width: 900px){
     section .cards{
@@ -189,7 +243,7 @@ section .cards .text-card h3{
 footer{
     background: #111;
     height: auto;
-    width: 100vw;
+    width: 98.9vw;
     font-family: Arial, Helvetica, sans-serif;
     padding-top: 40px;
     color: #fff;
@@ -236,7 +290,7 @@ footer{
 }
 .footer-bottom{
     background: #000;
-    width: 100vw;
+    width: 98.9vw;
     padding: 20px 0;
     text-align: center;
 }
