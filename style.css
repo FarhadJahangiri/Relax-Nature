@@ -380,8 +380,8 @@ footer{
     section .cards{
         display: flex;
         flex-direction: column;
-        height: 80vh;
-        width: 40vh;
+        height: 70vh;
+        width: 20vh;
         padding-right: 58vh;
-    }
+    } 
 }
