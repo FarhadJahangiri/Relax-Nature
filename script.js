@@ -28,6 +28,13 @@ window.addEventListener('scroll',function(){
     bottom2.style.top = value * -1 + 'px';
 })
 
+function menu(){
+    const menu = document.querySelector('.menu');
+    const navigation = document.querySelector('.navigation')
+    menu.classList.toggle('active');
+    navigation.classList.toggle('active');
+}
+
 // window.addEventListener('scroll', reveal);
 
 // function reveal(){

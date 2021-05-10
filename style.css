@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    position: relative;
     font-family: 'Poppins' , sans-serif;
 }
 html{
@@ -18,7 +19,7 @@ body{
 
 /* top bar */
 
-#header{
+header{
     position: fixed;
     top: 0;
     left: 0;
@@ -34,32 +35,32 @@ header.sticky{
     padding: 5px 100px;
     background: #111;
 }
-#header .logo{
+header .logo{
     color: rgb(0, 0, 0);
     font-weight: 700;
     font-size: 2em;
     text-decoration: none;
 }
-#header ul{
+header ul{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-#header ul li{
+header ul li{
     list-style: none;
     margin-left: 20px;
 }
-#header ul li a{
+header ul li a{
     text-decoration: none;
     padding: 6px 15px;
     color:#000;
     border-radius: 20px;
 }
-#header ul li a:hover{
+header ul li a:hover{
     background: rgb(12, 0, 173);
     color: #fff;
 }
-#header.sticky .logo, #header.sticky ul li a{
+header.sticky .logo, #header.sticky ul li a{
     color: rgb(255, 255, 255);
 }
 
@@ -155,6 +156,7 @@ section .container{
 }
 section .text2{
     font-size: 60px;
+    font-family: Fredoka One;
     text-align: center;
     text-transform: uppercase;
     text-shadow: 2px 2px 2px rgb(0, 0, 0);
@@ -170,13 +172,24 @@ section .cards .text-card{
     padding: 20px;
     width: 400px;
     height: 300px;
+    z-index: 1;
 }
-section .cards .text-card h3{
-    font-size: 30px;
-    text-align: center;
+section .cards .text-card a{
+    font-family:Arial, Helvetica, sans-serif bold;
+    font-style: bold;
     text-transform: uppercase;
-    margin-bottom: 10px;
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    text-decoration: none;
+    padding: 6px 15px;
+    color:#000;
+    border-radius: 20px;
     background:rgba(255, 255, 255, 0.63);
+}
+section .cards .text-card a:hover{
+    background: rgba(0, 0, 0, 0.596);
+    color: #fff;
 }
 #Garden{
     background:url("Garden.jpeg");
@@ -226,20 +239,6 @@ section .cards .text-card h3{
     background: url("storm.jpg");
     background-size: cover;
 }
-/* @media (max-width: 900px){
-    section .cards{
-        flex-direction: column;
-    }
-}
-.reveal{
-    position: relative;
-    transform: translateY(150px);
-    opacity: 0;
-    transition: all 2s ease;
-}
-.reveal.active{
-    transform: translateY(0px);
-} */
 footer{
     background: #111;
     height: auto;
@@ -303,4 +302,56 @@ footer{
     text-transform: uppercase;
     opacity: .4;
     font-weight: 200;
+}
+
+/* Media for right menu */
+
+@media (max-width: 991px){
+    header,
+    header.sticky{
+        padding: 10px 20px;
+    }
+    header .navigation{
+        display: none;
+    }
+    header .navigation.active{
+        width: 100%;
+        height: calc(100% - 68px);
+        position: fixed;
+        top: 68px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: rgb(0, 0, 0);
+    }
+    header .navigation li{
+        margin-left: 0;
+    }
+    header .navigation li a{
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.6em;
+        font-weight: 300;   
+    }
+    .menu{
+        position: relative;
+        width: 50px;
+        height: 50px;
+        background:url("menu.png");
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+    .menu.active{
+        background: url("close.png");
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    header.sticky .menu{
+        filter: invert(1);
+    }
 }

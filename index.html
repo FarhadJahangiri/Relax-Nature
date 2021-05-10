@@ -5,8 +5,10 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
     </head>
     <body>
 
@@ -14,7 +16,9 @@
 
         <header id="header">
             <a href="#" class="logo">Relax With Nature</a>
-            <ul>
+            <div class="menu" onclick="menu();"></div>
+            <ul class="navigation">
+                <li><a href="#">Home</a></li>
                 <li><a href="#bottomSection1" >SPRING</a></li>
                 <li><a href="#bottomSection2">SUMMER</a></li>
                 <li><a href="#bottomSection3">FALL</a></li>
@@ -40,14 +44,14 @@
             <div class="container reveal">
                 <h2 class="text2">spring</h2>
                 <div class="cards">
-                    <div class="text-card" id="Garden">
-                        <h3>Garden</h3>
+                    <div class="text-card" id="Garden" data-aos="fade-right">
+                        <a href="#">Garden</a>
                     </div>
-                    <div class="text-card" id="Picnic">
-                        <h3>Picnic</h3>
+                    <div class="text-card" id="Picnic" data-aos="fade-up">
+                        <a href="#">Picnic</a>
                     </div>
-                    <div class="text-card" id="Lake">
-                        <h3>Lake</h3>
+                    <div class="text-card" id="Lake" data-aos="fade-left">
+                        <a href="#">Lake</a>
                     </div>
                 </div>
             </div>
@@ -56,14 +60,14 @@
             <div class="container reveal">
                 <h2 class="text2">summer</h2>
                 <div class="cards">
-                    <div class="text-card" id="beach">
-                        <h3>beach</h3>
+                    <div class="text-card" id="beach" data-aos="fade-right">
+                        <a href="#">beach</a>
                     </div>
-                    <div class="text-card" id="desert">
-                        <h3>desert</h3>
+                    <div class="text-card" id="desert" data-aos="fade-up">
+                        <a href="#">desert</a>
                     </div>
-                    <div class="text-card" id="mountains">
-                        <h3>mountains</h3>
+                    <div class="text-card" id="mountains" data-aos="fade-left">
+                        <a href="#">mountains</a>
                     </div>
                 </div>
             </div>
@@ -72,14 +76,14 @@
             <div class="container reveal">
                 <h2 class="text2">fall</h2>
                 <div class="cards">
-                    <div class="text-card" id="jungle">
-                        <h3>jungle</h3>
+                    <div class="text-card" id="jungle" data-aos="fade-right">
+                        <a href="#">jungle</a>
                     </div>
-                    <div class="text-card" id="road">
-                        <h3>road</h3>
+                    <div class="text-card" id="road" data-aos="fade-up">
+                        <a href="#">road</a>
                     </div>
-                    <div class="text-card" id="lake1">
-                        <h3>lake</h3>
+                    <div class="text-card" id="lake1" data-aos="fade-left">
+                        <a href="#">lake</a>
                     </div>
                 </div>
             </div>
@@ -88,14 +92,14 @@
             <div class="container reveal">
                 <h2 class="text2">winter</h2>
                 <div class="cards">
-                    <div class="text-card" id="mountains1">
-                        <h3>mountains</h3>
+                    <div class="text-card" id="mountains1" data-aos="fade-right">
+                        <a href="#">mountains</a>
                     </div>
-                    <div class="text-card" id="fireplace">
-                        <h3>fire place</h3>
+                    <div class="text-card" id="fireplace" data-aos="fade-up">
+                        <a href="#">fire place</a>
                     </div>
-                    <div class="text-card" id="storm">
-                        <h3>storm</h3>
+                    <div class="text-card" id="storm" data-aos="fade-left">
+                        <a href="#">storm</a>
                     </div>
                 </div>
             </div>
@@ -116,7 +120,10 @@
                 <p>copyright &copy;2021 RelaxWithNature. designed by <span>farhad jahangiri</span></p>
             </div>
         </footer>
-
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script src="script.js"></script>
+        <script type="text/javascript">
+            AOS.init();
+        </script>
     </body>
 </html>
