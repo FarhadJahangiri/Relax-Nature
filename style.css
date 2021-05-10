@@ -78,7 +78,7 @@ section {
 
 /* images */
 
-#imgSec::before{
+.imgSec::before{
     content: '';
     position: absolute;
     bottom: 0;
@@ -353,5 +353,14 @@ footer{
     }
     header.sticky .menu{
         filter: invert(1);
+    }
+    header .logo {
+        font-size: 1.8em;
+    }
+    section{
+        height: 30vh;
+    }
+    .imgSec{
+        margin-top: 100px;
     }
 }
