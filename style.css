@@ -310,6 +310,7 @@ footer{
     header,
     header.sticky{
         padding: 10px 20px;
+        overflow: hidden;
     }
     header .navigation{
         display: none;
@@ -384,4 +385,7 @@ footer{
         width: 20vh;
         padding-right: 58vh;
     } 
+    footer{
+        overflow: hidden;
+    }
 }

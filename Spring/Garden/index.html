@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garden</title>
+    <link rel="stylesheet"  type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        
+    </div>
+    <div class="wrapper">
+        <div class="sidebar">
+            <ul>
+                <li>
+                    <h2>Rain</h2>
+                    <img src="play.png" id="icon1">
+                    <input type="range" class="volume" id="volume_rain" onchange="setVolume(this.value,'rain')"
+                     min="0" max="1" step="0.01" value="1">
+                </li>
+                <li>
+                    <h2>Birds</h2>
+                    <img src="play.png" id="icon2">
+                    <input type="range" class="volume" id="volume_birds" onchange="setVolume(this.value,'birds')"
+                     min="0" max="1" step="0.01" value="1">
+                </li>
+                <li>
+                    <h2>Wind</h2>
+                    <img src="play.png" id="icon3">
+                    <input type="range" class="volume" id="volume_wind" onchange="setVolume(this.value,'wind')"
+                     min="0" max="1" step="0.01" value="1">
+                </li>
+                <li>
+                    <h2>Farm</h2>
+                    <img src="play.png" id="icon4">
+                    <input type="range" class="volume" id="volume_farm" onchange="setVolume(this.value,'farm')"
+                     min="0" max="1" step="0.01" value="1">
+                </li>
+                <li>
+                    <h2>water</h2>
+                    <img src="play.png" id="icon5">
+                    <input type="range" class="volume" id="volume_water" onchange="setVolume(this.value,'water')"
+                     min="0" max="1" step="0.01" value="1">
+                </li>
+                <li>
+                    <h2>walking</h2>
+                    <img src="play.png" id="icon6">
+                    <input type="range" class="volume" id="volume_walking" onchange="setVolume(this.value,'walking')"
+                     min="0" max="1" step="0.01" value="1">
+                </li>
+            </ul>
+        </div>
+    </div>
+    <audio id="rainSong"><source src="rain.wav" type="audio/mp3"></audio>
+    <audio id="birdsSong"><source src="birds.mp3" type="audio/mp3"></audio>
+    <audio id="windSong"><source src="wind.wav" type="audio/mp3"></audio>
+    <audio id="farmSong"><source src="farm.mp3" type="audio/mp3"></audio>
+    <audio id="waterSong"><source src="water.mp3" type="audio/mp3"></audio>
+    <audio id="walkingSong"><source src="walking.mp3" type="audio/mp3"></audio>
+
+    <script>
+        var rainSong = document.getElementById("rainSong");
+        var icon1 = document.getElementById("icon1");
+        var birdsSong = document.getElementById("birdsSong");
+        var icon2 = document.getElementById("icon2");
+        var windSong = document.getElementById("windSong")
+        var icon3 = document.getElementById("icon3")
+        var farmSong = document.getElementById("farmSong")
+        var icon4 = document.getElementById("icon4")
+        var waterSong = document.getElementById("waterSong")
+        var icon5 = document.getElementById("icon5")
+        var walkingSong = document.getElementById("walkingSong")
+        var icon6 = document.getElementById("icon6")
+
+        function setVolume(value,type){
+            if (type == "rain"){
+                rainSong.volume = value;
+            }else if(type == "birds"){
+                birdsSong.volume = value;
+            }else if(type == "wind"){
+                windSong.volume = value;
+            }else if(type == "farm"){
+                farmSong.volume = value;
+            }else if(type == "water"){
+                waterSong.volume = value;
+            }else{
+                walkingSong.volume = value
+            }
+        }
+        icon1.onclick = function(){
+            if(rainSong.paused){
+                rainSong.play();
+                icon1.src = "pause.png";
+            }else{
+                rainSong.pause();
+                icon1.src = "play.png";
+            }
+        }
+        icon2.onclick = function(){
+            if(birdsSong.paused){
+                birdsSong.play();
+                icon2.src = "pause.png";
+            }else{
+                birdsSong.pause();
+                icon2.src = "play.png";
+            }
+        }
+        icon3.onclick = function(){
+            if(windSong.paused){
+                windSong.play();
+                icon3.src = "pause.png";
+            }else{
+                windSong.pause();
+                icon3.src = "play.png";
+            }
+        }
+        icon4.onclick = function(){
+            if(farmSong.paused){
+                farmSong.play();
+                icon4.src = "pause.png";
+            }else{
+                farmSong.pause();
+                icon4.src = "play.png";
+            }
+        }
+        icon5.onclick = function(){
+            if(waterSong.paused){
+                waterSong.play();
+                icon5.src = "pause.png";
+            }else{
+                waterSong.pause();
+                icon5.src = "play.png";
+            }
+        }
+        icon6.onclick = function(){
+            if(walkingSong.paused){
+                walkingSong.play();
+                icon6.src = "pause.png";
+            }else{
+                walkingSong.pause();
+                icon6.src = "play.png";
+            }
+        }
+    </script>
+</body>
+</html>
