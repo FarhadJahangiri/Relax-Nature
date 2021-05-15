@@ -325,7 +325,7 @@ footer{
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        background: rgb(0, 0, 0);
+        background: rgba(0, 0, 0, 0.952);
     }
     header .navigation li{
         margin-left: 0;
@@ -333,8 +333,8 @@ footer{
     header .navigation li a{
         text-decoration: none;
         color: #fff;
-        font-size: 1.6em;
-        font-weight: 300;   
+        font-size: 2em;
+        font-weight: 400; 
     }
     .menu{
         position: relative;
@@ -361,7 +361,7 @@ footer{
 
     /* Body For Mobile */
 
-    section{
+    /* section{
         height: 70vh;
         display: flex;
     }
@@ -387,5 +387,27 @@ footer{
     } 
     footer{
         overflow: hidden;
+    } */
+    .imgSec #text{
+     font-size: 100px;
+    }
+    .container{
+        display: grid;
+        box-sizing: border-box;
+       
+    }
+    .container .cards{
+        width: 70%;  
+        padding-right: 10%;
+        display: flex;
+        flex-direction: column; 
+        
+    }
+    .container .cards .text-card{
+        width: 140%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        
     }
 }

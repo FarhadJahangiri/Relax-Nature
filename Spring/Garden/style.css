@@ -79,3 +79,35 @@ img{
 .volume{
     width: 80px;
 }
+@media (max-width:600px){
+    .wrapper .sidebar{
+        display: flex;
+        margin: 0;
+        padding: 0;
+        width: 20%; 
+        opacity: 20%; 
+    }
+    .wrapper .sidebar li{
+        margin-bottom: -15px;
+        
+    }
+    .wrapper .sidebar h2{
+        font-size: 13px;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 5px;
+        text-align: center;
+        
+    }
+    .wrapper .sidebar .icon{
+        width: 30px;
+        margin-left: 13px;
+    }
+    .wrapper .sidebar .volume{
+        width: 55px;
+    }
+    .wrapper .sidebar:hover{
+        opacity: 100%;
+        background: #111;
+    }
+}
