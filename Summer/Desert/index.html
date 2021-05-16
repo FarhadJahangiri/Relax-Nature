@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beach</title>
+    <link rel="stylesheet"  type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        
+    </div>
+    <div class="wrapper">
+        <div class="sidebar">
+            <ul>
+                <li>
+                    <h2>fire</h2>
+                    <img src="play.png" id="icon1" class="icon">
+                    <input type="range" class="volume" id="volume_fire" onchange="setVolume(this.value,'fire')"
+                     min="0" max="1" step="0.01" value="1">
+                </li>
+                <li>
+                    <h2>Birds</h2>
+                    <img src="play.png" id="icon2" class="icon">
+                    <input type="range" class="volume" id="volume_birds" onchange="setVolume(this.value,'birds')"
+                     min="0" max="1" step="0.01" value="1">
+                </li>
+                <li>
+                    <h2>Wind</h2>
+                    <img src="play.png" id="icon3" class="icon">
+                    <input type="range" class="volume" id="volume_wind" onchange="setVolume(this.value,'wind')"
+                     min="0" max="1" step="0.01" value="1">
+                </li>
+                <li>
+                    <h2>kids</h2>
+                    <img src="play.png" id="icon4" class="icon">
+                    <input type="range" class="volume" id="volume_kids" onchange="setVolume(this.value,'kids')"
+                     min="0" max="1" step="0.01" value="1">
+                </li>
+                <li>
+                    <h2>wave</h2>
+                    <img src="play.png" id="icon5" class="icon">
+                    <input type="range" class="volume" id="volume_wave" onchange="setVolume(this.value,'wave')"
+                     min="0" max="1" step="0.01" value="1">
+                </li>
+                <li>
+                    <h2>water Lapping</h2>
+                    <img src="play.png" id="icon6" class="icon">
+                    <input type="range" class="volume" id="volume_waterLapping" onchange="setVolume(this.value,'waterLapping')"
+                     min="0" max="1" step="0.01" value="1">
+                </li>
+            </ul>
+        </div>
+    </div>
+    <audio id="fireSong"><source src="fire.mp3" type="audio/mp3"></audio>
+    <audio id="birdsSong"><source src="birds.mp3" type="audio/mp3"></audio>
+    <audio id="windSong"><source src="wind.mp3" type="audio/mp3"></audio>
+    <audio id="kidsSong"><source src="kids.mp3" type="audio/mp3"></audio>
+    <audio id="waveSong"><source src="wave.mp3" type="audio/mp3"></audio>
+    <audio id="waterLappingSong"><source src="waterLapping.mp3" type="audio/mp3"></audio>
+
+    <script>
+        var fireSong = document.getElementById("fireSong");
+        var icon1 = document.getElementById("icon1");
+        var birdsSong = document.getElementById("birdsSong");
+        var icon2 = document.getElementById("icon2");
+        var windSong = document.getElementById("windSong")
+        var icon3 = document.getElementById("icon3")
+        var kidsSong = document.getElementById("kidsSong")
+        var icon4 = document.getElementById("icon4")
+        var waveSong = document.getElementById("waveSong")
+        var icon5 = document.getElementById("icon5")
+        var waterLappingSong = document.getElementById("waterLappingSong")
+        var icon6 = document.getElementById("icon6")
+
+        function setVolume(value,type){
+            if (type == "fire"){
+                fireSong.volume = value;
+            }else if(type == "birds"){
+                birdsSong.volume = value;
+            }else if(type == "wind"){
+                windSong.volume = value;
+            }else if(type == "kids"){
+                kidsSong.volume = value;
+            }else if(type == "wave"){
+                waveSong.volume = value;
+            }else{
+                waterLappingSong.volume = value
+            }
+        }
+        icon1.onclick = function(){
+            if(fireSong.paused){
+                fireSong.play();
+                icon1.src = "pause.png";
+            }else{
+                fireSong.pause();
+                icon1.src = "play.png";
+            }
+        }
+        icon2.onclick = function(){
+            if(birdsSong.paused){
+                birdsSong.play();
+                icon2.src = "pause.png";
+            }else{
+                birdsSong.pause();
+                icon2.src = "play.png";
+            }
+        }
+        icon3.onclick = function(){
+            if(windSong.paused){
+                windSong.play();
+                icon3.src = "pause.png";
+            }else{
+                windSong.pause();
+                icon3.src = "play.png";
+            }
+        }
+        icon4.onclick = function(){
+            if(kidsSong.paused){
+                kidsSong.play();
+                icon4.src = "pause.png";
+            }else{
+                kidsSong.pause();
+                icon4.src = "play.png";
+            }
+        }
+        icon5.onclick = function(){
+            if(waveSong.paused){
+                waveSong.play();
+                icon5.src = "pause.png";
+            }else{
+                waveSong.pause();
+                icon5.src = "play.png";
+            }
+        }
+        icon6.onclick = function(){
+            if(waterLappingSong.paused){
+                waterLappingSong.play();
+                icon6.src = "pause.png";
+            }else{
+                waterLappingSong.pause();
+                icon6.src = "play.png";
+            }
+        }
+    </script>
+</body>
+</html>

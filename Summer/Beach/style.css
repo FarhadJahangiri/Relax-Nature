@@ -1,0 +1,123 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+.container{
+    background-image: url(garden1.jpg);
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    animation: animate 150s ease-in-out infinite;
+    background-size: cover;
+}
+@keyframes animate{
+    0%{
+        background-image: url(beach1.jpg);
+    }
+    10%{
+        background-image: url(beach2.jpg);
+    }
+    20%{
+        background-image: url(beach3.jpg);
+    }
+    30%{
+        background-image: url(beach4.jpg);
+    }
+    40%{
+        background-image: url(beach5.jpg);
+    }
+    50%{
+        background-image: url(beach6.jpg);
+    }
+    60%{
+        background-image: url(beach7.jpg);
+    }
+    70%{
+        background-image: url(beach8.jpg);
+    }
+    80%{
+        background-image: url(beach9.jpg);
+    }
+    90%{
+        background-image: url(beach10.jpg);
+    }
+    100%{
+        background-image: url(beach11.jpg);
+    }
+}
+img{
+    cursor: pointer;
+}
+.wrapper{
+    display: flex;
+    position: relative;
+}
+.wrapper .sidebar{
+    opacity: 20%;
+    position: fixed;
+    width: 110px;
+    height: 100%;
+    background: #111;
+    padding: 30px 0;
+}
+.wrapper .sidebar h2{
+    font-size: 15px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.wrapper .sidebar ul li img{
+    width: 40px;
+    margin-left: 20px;
+}
+.wrapper .sidebar ul li{
+    padding: 10px;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    border-top: 1px solid rgba(225,225,225,0.05);
+}
+.wrapper .sidebar:hover{
+    opacity: 100%;
+    background:rgb(37, 37, 37);
+}
+.volume{
+    width: 80px;
+}
+@media (max-width:600px){
+    .wrapper .sidebar{
+        display: flex;
+        margin: 0;
+        padding: 0;
+        width: 20%; 
+        opacity: 20%; 
+    }
+    .wrapper .sidebar li{
+        margin-bottom: -15px;
+        
+    }
+    .wrapper .sidebar h2{
+        font-size: 13px;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 5px;
+        text-align: center;
+        
+    }
+    .wrapper .sidebar .icon{
+        width: 30px;
+        margin-left: 13px;
+    }
+    .wrapper .sidebar .volume{
+        width: 55px;
+    }
+    .wrapper .sidebar:hover{
+        opacity: 100%;
+        background: #111;
+    }
+}
